@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+       <script>
+           let input = parseInt(prompt("Doanh thu bạn mang về cho công ty là:"));
+              if(input <20000000) {
+                  alert("bạn chưa đạt đủ doanh số");
+              }else if ( input < 50000000) {
+                  alert( "doanh số của bạn là 5% tương đương với:"+ (input*0.05));
+              }else if( input <70000000){
+                  alert("doanh số của bạn là 10% tương đương với" + (input*0.1));
+           }else {
+                  alert("doanh số của bạn là 20% tương đương với" + (input*0.2));
+              }
+
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Thời gian gọi trong nước (phút)</td>
+        <td>   </td>
+        <td>Thời gian gọi quốc tế (phút)</td>
+    </tr>
+    <tr>
+
+        <td> <input type="text" id ="in1" > </td>
+        <td></td>
+        <td><input id ="in2" type="text"></td>
+
+        <td><button type="button" onclick="showResult()">Tính tiền</button></td>
+    </tr>
+</table>
+        <script>
+            function showResult() {
+                let nationCost= parseInt(document.getElementById("in1").value);
+                let internationalCost= parseInt(document.getElementById("in2").value);
+                let paymentOverall= (nationCost*1800)+ (internationalCost*6600);
+                   alert("số tiền bạn phải thanh toán là:" +paymentOverall);
+            }
+        </script>
+</body>
+</html>
